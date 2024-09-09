@@ -1,2 +1,2 @@
 # Vuejs-Practice
-Repo to practice Cue.js
+Repo to practice Vue.js
