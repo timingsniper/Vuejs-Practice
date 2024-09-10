@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="https://unpkg.com/vue" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -18,7 +18,9 @@
     </header>
     <section id="user-goal">
       <h2>My Course Goal</h2>
-      <p></p>
+      <!-- <p>{{ outputGoal() }}</p>-->
+      <p v-html="outputGoal()"></p>
+      <a v-bind:href="vueLink">Learn more about Vue</a>
     </section>
   </body>
 </html>
