@@ -3,6 +3,7 @@ const app = Vue.createApp({
     return {
       counter: 0,
       name: "",
+      fullName: "",
     };
   },
   /*
@@ -13,8 +14,8 @@ const app = Vue.createApp({
     }
   },*/
   watch: {
-    name() {
-      
+    name(value) {
+      this.fullName = value + ' Jang';
     }
   },
   methods: {
